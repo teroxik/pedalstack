@@ -13,9 +13,10 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---
+<link rel="stylesheet" href="/src/styles/cyclenomad.css">
 
 <BlogLayout>
-  <article>
+  <article class="cyclenomad-article">
     <h1>{post.data.title}</h1>
     <p><em>{post.data.date}</em></p>
     <Content />

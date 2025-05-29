@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.cyclenomad-header {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cyclenomad-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cyclenomad-article {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cyclenomad-article h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.cyclenomad-article p {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.cyclenomad-article a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.cyclenomad-article a:hover {
+  text-decoration: underline;
+}
