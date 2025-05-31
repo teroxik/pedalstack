@@ -1,15 +1,33 @@
-
 ---
 import { getCollection } from 'astro:content';
 const posts = await getCollection('blog');
 ---
 <html>
+  <head>
+    <link rel="stylesheet" href="/styles/homepage.css">
+  </head>
   <body>
-    <h1>Welcome to PedalStack.dev</h1>
-    <ul>
-      {posts.map(post => (
-        <li><a href={`/blog/${post.slug}/`}>{post.data.title}</a></li>
-      ))}
-    </ul>
+    <header class="homepage-header">
+      <img src="/assets/cyclist-tent-bike.png" alt="Cycling adventure" />
+      <nav class="homepage-nav">
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/gear">Gear</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to PedalStack.dev</h1>
+      <section class="blog-tiles">
+        {posts.map(post => (
+          <article class="blog-tile">
+            <h2><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+            <p>{post.data.description}</p>
+          </article>
+        ))}
+      </section>
+    </main>
+    <footer>© 2025 PedalStack.dev</footer>
   </body>
 </html>
