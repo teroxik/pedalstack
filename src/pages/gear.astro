@@ -1,5 +1,20 @@
-<html>
-  <body>
+
+---
+title: "Top 7 Must-Have Items for Coding While Bikepacking"
+description: "My essential gear list for developers working remotely while traveling by bike."
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Gear" jumboImage="/assets/cyclist-tent-bike.png">
+  <slot name="customHead">
+    <meta name="description" content="My essential gear list for developers working remotely while traveling by bike." />
+    <meta property="og:title" content="Top 7 Must-Have Items for Coding While Bikepacking" />
+    <meta property="og:description" content="My essential gear list for developers working remotely while traveling by bike." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://pedalstack.dev/blog/coding-bikepacking-gear" />
+    <meta property="og:image" content="https://pedalstack.dev/images/gear-setup.jpg" />
+  </slot>
+  <main>
     <h1>My Dev + Cycling Setup</h1>
     <ul>
       <li>Framework Carbon Gravel Bike</li>
@@ -7,5 +22,5 @@
       <li>Foldable Bluetooth Keyboard</li>
       <li>MacBook Air + GitHub Copilot</li>
     </ul>
-  </body>
-</html>
+  </main>
+</BaseLayout>
